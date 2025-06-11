@@ -1,11 +1,11 @@
-#Purpose: Simple program that exits and returns a
+#PURPOSE: Simple program that exits and returns a
 #         status code back to the Linux Kernel
 #
 
-#Input:   None
+#INPUT:   None
 #
 
-#Output:  returns a status code. This can be viewed 
+#OUTPUT:  returns a status code. This can be viewed 
 #         by typing 
 #
 #         echo $?
@@ -21,11 +21,11 @@
 .section .text
 .global _start
 _start:
-mov $1, %eax     # this is the linux kernel command
+movl $1, %eax     # this is the linux kernel command
                  # number (system call) for exiting
                  # a program
 
-mov $13, %ebx     # this is the status number we will 
+movl $13, %ebx     # this is the status number we will 
                  # return to the operating system.
                  # Changes this around and it will
                  # return different things to 
