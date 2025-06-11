@@ -1,0 +1,5 @@
+# Ignore the gitsync script
+gitsync.sh
+
+# Ignore all .txt files including misc.txt
+*.txt
